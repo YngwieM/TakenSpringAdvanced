@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="Weekend"></title>
+</head>
+<body>
+<h1 th:if="${weekend}" th:text="#{weekend}"></h1>
+<h1 th:if="not ${weekend}" th:text="#{werkdag}"></h1>
+</body>
+</html>
